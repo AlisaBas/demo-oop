@@ -9,7 +9,7 @@ public class Book {
     private int year;
 
     private int pages;
-    private int price;
+    private double price;
 
     public void setId(int newId){
         id=newId;
@@ -59,11 +59,11 @@ public class Book {
         return pages;
     }
 
-    public void setPrice(int newPrice){
+    public void setPrice(double newPrice){
         price=newPrice;
     }
 
-    public int getPrice(){
+    public double getPrice(){
         return price;
     }
 
