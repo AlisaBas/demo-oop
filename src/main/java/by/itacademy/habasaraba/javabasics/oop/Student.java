@@ -7,7 +7,7 @@ public class Student extends User{
         grant=newGrant;
     }
 
-    public int getIncome() {
+    public int getGrant() {
         if(grant>0){
         return grant;
     }

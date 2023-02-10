@@ -8,7 +8,7 @@ public class Person extends Student{
     }
 
     public int getIncome(){
-        return (salary+getIncome());
+        return (salary+getGrant());
     }
 
 }
