@@ -66,5 +66,19 @@ public class DemoOOP {
         System.out.println(customerOne.address().streetAddress());
 
 
+        Person personOne=new Person();
+        personOne.setName("Ivan");
+        personOne.setGrant(23);
+        personOne.setSalary(34);
+
+        System.out.println(personOne.getName());
+        System.out.println(personOne.getIncome());
+
     }
+
+
 }
+
+
+
+
