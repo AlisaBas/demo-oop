@@ -1,5 +1,7 @@
 package by.itacademy.habasaraba.javabasics.oop;
 
+import com.github.javafaker.Faker;
+
 public class DemoOOP {
     public static void main(String[] args) {
         Book bookOne=new Book();
@@ -53,15 +55,15 @@ public class DemoOOP {
         System.out.println(carOne.getPrice());
         System.out.println(carOne.getNumber());
 
-        Customer customerOne=new Customer();
-        String name = faker.name().fullName(); // Miss Samanta Schmidt
-        String firstName = faker.name().firstName(); // Emory
-        String lastName = faker.name().lastName(); // Barton
-        String streetAddress = faker.address().streetAddress();// 60018 Sawayn Brooks Suite 449
+        Faker customerOne=new Faker();
+        customerOne.name().firstName();
+        customerOne.name().lastName();
+        customerOne.address().streetAddress();
 
-        System.out.println(firstName);
-        System.out.println(lastName);
-        System.out.println(streetAddress);
+
+        System.out.println(customerOne.name().firstName());
+        System.out.println(customerOne.name().lastName());
+        System.out.println(customerOne.address().streetAddress());
 
 
     }
