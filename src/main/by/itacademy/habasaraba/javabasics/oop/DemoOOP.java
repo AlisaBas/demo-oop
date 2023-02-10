@@ -35,5 +35,23 @@ public class DemoOOP {
         System.out.println(bookTwo.getYear());
         System.out.println(bookTwo.getPages());
         System.out.println(bookTwo.getPrice());
+
+        Car carOne=new Car();
+        carOne.setId(103720835);
+        carOne.setBrand("Ford");
+        carOne.setModel("Fiesta");
+        carOne.setYear(2018);
+        carOne.setColor("Cherry");
+        carOne.setPrice(9000);
+        carOne.setNumber("AM12345");
+
+        System.out.println(carOne.getId());
+        System.out.println(carOne.getBrand());
+        System.out.println(carOne.getModel());
+        System.out.println(carOne.getYear());
+        System.out.println(carOne.getColor());
+        System.out.println(carOne.getPrice());
+        System.out.println(carOne.getNumber());
+
     }
 }

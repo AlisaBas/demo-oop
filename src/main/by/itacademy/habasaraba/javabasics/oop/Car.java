@@ -7,7 +7,7 @@ public class Car {
     private int year;
     private String color;
     private int price;
-    private int number;
+    private String number;
 
     public void setId(int newId){
         id=newId;
@@ -57,11 +57,11 @@ public class Car {
         return price;
     }
 
-    public void setNumber(int newNumber){
+    public void setNumber(String newNumber){
         number=newNumber;
     }
 
-    public int getNumber(){
+    public String getNumber(){
         return number;
     }
 }
