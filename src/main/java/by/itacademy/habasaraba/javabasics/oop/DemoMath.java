@@ -11,5 +11,9 @@ public class DemoMath {
         arr.add(0,"Serge");
         arr.set(0,"Andrei");
         System.out.println(arr);
+
+        for(int i=0;i<arr.size();i++){
+            System.out.println(arr.get(i));
+        }
     }
 }
