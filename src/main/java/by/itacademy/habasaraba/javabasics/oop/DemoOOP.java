@@ -2,7 +2,7 @@ package by.itacademy.habasaraba.javabasics.oop;
 
 import com.github.javafaker.Faker;
 
-public class DemoOOP {
+/*public class DemoOOP {
     public static void main(String[] args) {
         Book bookOne=new Book();
         bookOne.setId(10857656);
@@ -80,7 +80,7 @@ public class DemoOOP {
 
 
 }
-
+*/
 
 
 

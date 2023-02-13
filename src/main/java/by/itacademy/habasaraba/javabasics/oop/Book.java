@@ -11,6 +11,28 @@ public class Book {
     private int pages;
     private double price;
 
+    public Book(int newId, String newName,String newAuthor,String newPublisher,int newYear,int newPages,double newPrice){
+        id=newId;
+        name=newName;
+        author=newAuthor;
+        publisher=newPublisher;
+        year=newYear;
+        pages=newPages;
+        price=newPrice;
+    }
+
+    public String toString() {
+        return "Book{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", author='" + author + '\'' +
+                ", publisher='" + publisher + '\'' +
+                ", year=" + year +
+                ", pages=" + pages +
+                ", price=" + price +
+                '}';
+    }
+
     public void setId(int newId){
         id=newId;
     }
