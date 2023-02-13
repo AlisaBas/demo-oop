@@ -12,7 +12,9 @@ public class demoOP {
         System.out.println(bookOne);
 
         Car carOne=new Car(123,"Toyota","Corolla",2019,"Black",23000,"AM12345");
+        Car carTwo=new Car(124,"Toyota","Corolla",2019,"Black",23000,"AM12345");
         System.out.println(carOne);
+        System.out.println(carOne.equals(carTwo));
 
     }
 }
