@@ -55,6 +55,7 @@ public class DemoOOP {
         System.out.println(carOne.getPrice());
         System.out.println(carOne.getNumber());
 
+
         Faker customerOne=new Faker();
         customerOne.name().firstName();
         customerOne.name().lastName();

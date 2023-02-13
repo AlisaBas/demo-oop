@@ -5,9 +5,33 @@ public class Customer {
     private String lastName;
    private String name;
     private String fathersName;
-    private char address;
+    private String address;
     private int cardNumber;
     private int account;
+
+    public Customer(int newId, String newLastName,String newName, String newFathersName, String newAddress, int newCardNumber, int newAccount){
+        id=newId;
+        lastName=newLastName;
+        name=newName;
+        fathersName=newFathersName;
+        address=newAddress;
+        cardNumber=newCardNumber;
+        account=newAccount;
+
+    }
+
+    public String toString() {
+        return "Customer{" +
+                "id=" + id +
+                ", lastName='" + lastName + '\'' +
+                ", name='" + name + '\'' +
+                ", fathersName='" + fathersName + '\'' +
+                ", address='" + address + '\'' +
+                ", cardNumber=" + cardNumber +
+                ", account=" + account +
+                '}';
+    }
+
 
     public int getId() {
         return id;
@@ -40,11 +64,11 @@ public class Customer {
         return fathersName;
     }
 
-    public void setAddress(char newAddress){
+    public void setAddress(String newAddress){
         address=newAddress;
     }
 
-    public char getAddress(){
+    public String getAddress(){
         return address;
     }
 
@@ -63,4 +87,7 @@ public class Customer {
     public int getAccount(){
         return account;
     }
+
+
+
 }
