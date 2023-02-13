@@ -9,5 +9,8 @@ public class demoOP {
         Book bookOne=new Book(2,"Harry Potter","Joanne Rowling", "Eksmo", 2019,345,25.89);
         System.out.println(bookOne);
 
+        Car carOne=new Car(123,"Toyota","Corolla",2019,"Black",23000,"AM12345");
+        System.out.println(carOne);
+
     }
 }

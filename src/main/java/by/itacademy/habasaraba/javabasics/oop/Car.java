@@ -9,6 +9,31 @@ public class Car {
     private int price;
     private String number;
 
+    public Car(int newId,String newBrand, String newModel, int newYear,String newColor, int newPrice, String newNumber){
+        id=newId;
+        brand=newBrand;
+        model=newModel;
+        year=newYear;
+        color=newColor;
+        price=newPrice;
+        number=newNumber;
+    }
+
+
+
+    @Override
+    public String toString() {
+        return "Car{" +
+                "id=" + id +
+                ", brand='" + brand + '\'' +
+                ", model='" + model + '\'' +
+                ", year=" + year +
+                ", color='" + color + '\'' +
+                ", price=" + price +
+                ", number='" + number + '\'' +
+                '}';
+    }
+
     public void setId(int newId){
         id=newId;
     }
