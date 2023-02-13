@@ -1,5 +1,7 @@
 package by.itacademy.habasaraba.javabasics.oop;
 
+import java.util.Objects;
+
 public class Car {
     private int id;
     private String brand;
@@ -32,6 +34,18 @@ public class Car {
                 ", price=" + price +
                 ", number='" + number + '\'' +
                 '}';
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof Car car)) return false;
+        return id == car.id && year == car.year && price == car.price && Objects.equals(brand, car.brand) && Objects.equals(model, car.model) && Objects.equals(color, car.color) && Objects.equals(number, car.number);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(id, brand, model, year, color, price, number);
     }
 
     public void setId(int newId){
