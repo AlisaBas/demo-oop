@@ -1,6 +1,7 @@
 package by.itacademy.habasaraba.javabasics.oop;
 
 import java.util.ArrayList;
+import java.util.HashSet;
 
 public class DemoMath {
     public static void main(String[] args) {
@@ -15,5 +16,16 @@ public class DemoMath {
         for(int i=0;i<arr.size();i++){
             System.out.println(arr.get(i));
         }
+
+        for(String item:arr){
+            System.out.println(item);
+        }
+
+        HashSet<String> mySet=new HashSet<>();
+        mySet.add("John");
+        mySet.add("John");
+        mySet.add("John");
+        System.out.println(mySet);
+
     }
 }
